@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel = "stylesheet" href = "FormularioTeste.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
    
     <title>Clash Company</title>
 </head>
 <body>
 
-    <div>
-        <a href = "#"><link</a>
+    <div id = "cadastro">
         <h1><p align = center>Cadastro de Jogadores</p></h1>
-        <P>Complete seu Cadastro</P>
+        <p align = center>Complete seu Cadastro</p>
         <br>
     </div>
 
     <form>
-        <fieldset>
+        <fieldset class= "box1">
             <div>
                 <label>Nome:</label>
-                <imput type="text" name="Nome" id="Nome">
+                <input type="text" name="Nome" id="Nome">
             </div>
 
             <div>
                 <label>Sobrenome:</label>
-                <imput type="text" name="Sobrenome" id="Sobrenome">
+                <input type="text" name="Sobrenome" id="Sobrenome">
             </div>
             
             <div>
                 <label>Email:</label>
-                <imput type="email" name="email" id="email">
+                <input type="email" name="email" id="email">
             </div>
         </fieldset>
 
         <div>
-            <label>Qual o seu cargo dentro do jogo?</label>
+            <label>Qual o seu cargo dentro do jogo?<br></label>
             <label>
-                <imput type="radio" name="tgmae" value="Membro"> Membro
+                <input type="radio" name="tgmae" value="Membro"> Membro
             </label>
             <label>
-               <imput type="radio" name="tgame" value="Ancião"> Ancião
+               <input type="radio" name="tgame" value="Ancião"> Ancião
            </label> 
            <label>
-               <imput type="radio" name="tgame" value="Colíder"> Colíder
+               <input type="radio" name="tgame" value="Colíder"> Colíder
            </label>
            <label>
                <imput type="radio" name="tgame" value="Líder"> Líder
            </label>
-        </div>
+        </div><br>
 
         <div>
             <label>Nivel de Centro de Vila</label>
@@ -62,12 +61,12 @@
             </select> 
         </div>
 
-        <fieldset>
+        <fieldset class = "box2">
             <div>
                 <label>Selecione, qual tipo de jogador você é:</label><br><br>
-                <imput type="checkbox" id="jogador1" name="jogador1" value="Farm">
+                <input type="checkbox" id="jogador1" name="jogador1" value="Farm">
                 <label for="jogador1">Farm</label>
-                </imput>
+                </input>
             </div>
         </fieldset>
 
