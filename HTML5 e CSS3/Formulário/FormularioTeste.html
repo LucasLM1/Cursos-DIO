@@ -9,34 +9,34 @@
 </head>
 <body>
 
-    <div id = "cadastro">
-        <h1><p align = center>Cadastro de Jogadores</p></h1>
-        <p align = center>Complete seu Cadastro</p>
+    <div class ="divisoes">
+        <h1 id = "titulo"><p align = center>Cadastro de Jogadores</p></h1>
+        <p id= "subtitulo" align = center>Complete seu Cadastro</p>
         <br>
     </div>
 
     <form>
-        <fieldset class= "box1">
-            <div>
-                <label>Nome:</label>
-                <input type="text" name="Nome" id="Nome">
+        <fieldset class= "box1"> <!--fieldset para aparecer barra com nome-->
+            <div class ="divisoes"> <!--colocando a mesma classe em todas as divs pois elas terão o mesmo estilo no css-->
+                <label><b>Nome:</b></label> <!--tag <b> ou <strong> deixam a palavra em negrito-->
+                <input type="text" name="Nome" id="Nome" required> <!--required significa que a pessoa não pode enviar parte do formulário em branco-->
             </div>
 
-            <div>
-                <label>Sobrenome:</label>
-                <input type="text" name="Sobrenome" id="Sobrenome">
+            <div class ="divisoes">
+                <label><b>Sobrenome:</b></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required> 
             </div>
             
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email" id="email">
+            <div class ="divisoes">
+                <label><b>Email:</b></label>
+                <input type="email" name="email" id="email" required> <!--em emails sempre colocar type email-->
             </div>
         </fieldset>
 
-        <div>
-            <label>Qual o seu cargo dentro do jogo?<br></label>
+        <div class ="divisoes">
+            <label><b>Qual o seu cargo dentro do jogo?</b></label> <!--label normal aparece as bolinhas de inicio-->
             <label>
-                <input type="radio" name="tgmae" value="Membro"> Membro
+                <input type="radio" name="tgmae" value="Membro"> Membro <!--type radio bolinha-->
             </label>
             <label>
                <input type="radio" name="tgame" value="Ancião"> Ancião
@@ -45,12 +45,12 @@
                <input type="radio" name="tgame" value="Colíder"> Colíder
            </label>
            <label>
-               <imput type="radio" name="tgame" value="Líder"> Líder
+               <input type="radio" name="tgame" value="Líder"> Líder
            </label>
         </div><br>
 
-        <div>
-            <label>Nivel de Centro de Vila</label>
+        <div class ="divisoes">
+            <label><b>Nivel de Centro de Vila</b></label> <!--fazendo uma aba com valores setados-->
             <select id="Nivel de Centro de Vila">
                 <option selected disabled value="">Selecione </option>
                 <option>1 ao 4</option>
@@ -59,23 +59,33 @@
                 <option>11 ao 12</option>
                 <option>13 ao 14</option>
             </select> 
-        </div>
+        </div><br>
 
         <fieldset class = "box2">
-            <div>
-                <label>Selecione, qual tipo de jogador você é:</label><br><br>
-                <input type="checkbox" id="jogador1" name="jogador1" value="Farm">
-                <label for="jogador1">Farm</label>
-                </input>
+            <div class ="divisoes">
+                <label><b>Selecione, qual tipo de jogador(a) você é:</b></label><br><br>
+
+                <input type="checkbox" id="jogador1" name="jogador1" value="Farm"> <!--Checkbox caixinha com um confere-->
+                <label for="jogador1"><abbr title = "Buscar e obter grande quantidade de recursos">Farm</abbr></label>
+
+                <input type="checkbox" id="jogador2" name="jogador2" value="Guerra">
+                <label for="jogador1">Guerra</label>
+
+                <input type="checkbox" id="jogador3" name="jogador3" value="Torneios">
+                <label for="jogador1">Torneios</label>
+
+                <input type="checkbox" id="jogador4" name="jogador4" value="Push">
+                <label for="jogador1"><abbr title = "Obter grande quantidade de troféus">Push</abbr></label> <!--tag <abbr> seignifica abreviação dentro do escopo-->
+                
             </div>
         </fieldset>
 
-        <div>
-            <br>
-            <label>Conte um pouco sobre sua experiência dentro do Mundo Clash:</label>
-            <textarea row="6" style="width: 26em;" id="experiência" name="experiência"></textarea>
-
+        <div class ="divisoes"><br>
+                <label><b>Conte um pouco sobre sua experiência dentro do Mundo Clash:</b></label><br> 
+            <textarea row="6" style="max-width: 150px;" id="experiência" name="experiência"></textarea>
         </div>
+
+        <button type ="submit">Enviar Formulário</button> <!-- botao que envia o formulário-->
     </form>
 
 </body>

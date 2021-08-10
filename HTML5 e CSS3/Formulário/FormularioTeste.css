@@ -2,14 +2,23 @@ body{
     background: #00BFFF
 }
 
+#titulo{
+    color: black;
+    margin-left: 5px;
+}
+
 .box1 {
-    background: #D3D3D3;
-    border: 3px solid #505050;
+    background: #808080;
+    border: 4px solid #505050;
+    border-top-color: #FF4500;
+    border-right-color: #FF4500;
     border-radius: 15px;
 }
 
 .box2 {
-    background: #D3D3D3;
-    border: 3px solid #505050;
+    background: #808080;
+    border: 4px solid #505050;
+    border-top-color: #FF4500;
+    border-right-color: #FF4500;
     border-radius: 15px;
 }
