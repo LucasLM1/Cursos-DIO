@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel = "stylesheet" href = "FormularioTeste.css">
+    <link rel = "stylesheet" href = "FormularioTeste.css"> <!--rel é a relação com o css-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
@@ -16,55 +16,59 @@
     </div>
 
     <form>
-        <fieldset class= "box1"> <!--fieldset para aparecer barra com nome-->
-            <div class ="divisoes"> <!--colocando a mesma classe em todas as divs pois elas terão o mesmo estilo no css-->
-                <label><b>Nome:</b></label> <!--tag <b> ou <strong> deixam a palavra em negrito-->
-                <input type="text" name="Nome" id="Nome" required> <!--required significa que a pessoa não pode enviar parte do formulário em branco-->
+        <div class= "box1"> <!--fieldset para aparecer barra com nome-->
+
+            <div class ="login"> <!--colocando a mesma classe em todas as divs pois elas terão o mesmo estilo no css-->
+                <label for= "nome"><b>Nome:</b></label> <!--tag <b> ou <strong> deixam a palavra em negrito-->
+                <input class= "btn" type="text" name="Nome" id="Nome" required> <!--required significa que a pessoa não pode enviar parte do formulário em branco-->
             </div>
 
-            <div class ="divisoes">
-                <label><b>Sobrenome:</b></label>
-                <input type="text" name="Sobrenome" id="Sobrenome" required> 
+            <div class ="login"> 
+                <label for= "sobrenome"><b>Sobrenome:</b></label>
+                <input class= "btn" type="text" name="Sobrenome" id="Sobrenome" required>
             </div>
             
-            <div class ="divisoes">
-                <label><b>Email:</b></label>
-                <input type="email" name="email" id="email" required> <!--em emails sempre colocar type email-->
-            </div>
-        </fieldset>
+            <div class ="login">
+                <label or= "email"><b>Email:</b></label>
+                <input class= "btn" type="email" name="email" id="email" required> <!--em emails sempre colocar type email-->
+            </div><br>
+            
 
-        <div class ="divisoes">
-            <label><b>Qual o seu cargo dentro do jogo?</b></label> <!--label normal aparece as bolinhas de inicio-->
-            <label>
-                <input type="radio" name="tgmae" value="Membro"> Membro <!--type radio bolinha-->
-            </label>
-            <label>
-               <input type="radio" name="tgame" value="Ancião"> Ancião
-           </label> 
-           <label>
-               <input type="radio" name="tgame" value="Colíder"> Colíder
-           </label>
-           <label>
-               <input type="radio" name="tgame" value="Líder"> Líder
-           </label>
-        </div><br>
+            <div>
+                <label><b>Qual o seu cargo dentro do jogo?</b></label> <!--label normal aparece as bolinhas de inicio-->
 
-        <div class ="divisoes">
-            <label><b>Nivel de Centro de Vila</b></label> <!--fazendo uma aba com valores setados-->
-            <select id="Nivel de Centro de Vila">
-                <option selected disabled value="">Selecione </option>
-                <option>1 ao 4</option>
-                <option>5 ao 7</option>
-                <option>8 ao 10</option>
-                <option>11 ao 12</option>
-                <option>13 ao 14</option>
-            </select> 
-        </div><br>
+                <label>
+                    <input type="radio" name="tgmae" value="Membro"> Membro <!--type radio bolinha-->
+                </label>
 
-        <fieldset class = "box2">
-            <div class ="divisoes">
+                <label>
+                    <input type="radio" name="tgame" value="Ancião"> Ancião
+                </label> 
+
+                <label>
+                    <input type="radio" name="tgame" value="Colíder"> Colíder
+                </label>
+
+                <label>
+                    <input type="radio" name="tgame" value="Líder"> Líder
+                </label>
+            </div><br>
+
+            <div>
+                <label><b>Nivel de Centro de Vila</b></label> <!--fazendo uma aba com valores setados-->
+                <select id="Nivel de Centro de Vila">
+                    <option selected disabled value="">Selecione </option>
+                    <option>1 ao 4</option>
+                    <option>5 ao 7</option>
+                    <option>8 ao 10</option>
+                    <option>11 ao 12</option>
+                    <option>13 ao 14</option>
+                    </select> 
+            </div><br>
+
+            <div>
                 <label><b>Selecione, qual tipo de jogador(a) você é:</b></label><br><br>
-
+                
                 <input type="checkbox" id="jogador1" name="jogador1" value="Farm"> <!--Checkbox caixinha com um confere-->
                 <label for="jogador1"><abbr title = "Buscar e obter grande quantidade de recursos">Farm</abbr></label>
 
@@ -78,15 +82,17 @@
                 <label for="jogador1"><abbr title = "Obter grande quantidade de troféus">Push</abbr></label> <!--tag <abbr> seignifica abreviação dentro do escopo-->
                 
             </div>
-        </fieldset>
+        
 
-        <div class ="divisoes"><br>
+            <div><br>
                 <label><b>Conte um pouco sobre sua experiência dentro do Mundo Clash:</b></label><br> 
-            <textarea row="6" style="max-width: 150px;" id="experiência" name="experiência"></textarea>
+                <textarea row="6" style="max-width: 150px;" id="experiência" name="experiência"></textarea>
+            </div>
         </div>
 
-        <button type ="submit">Enviar Formulário</button> <!-- botao que envia o formulário-->
+        <p align ="center">
+        <button class ="botao" type ="submit">Enviar Formulário</button> <!-- botao que envia o formulário-->
+        </p>
     </form>
-
 </body>
 </html>
