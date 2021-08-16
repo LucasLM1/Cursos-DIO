@@ -1,3 +1,43 @@
+function clicou(){
+    document.getElementById("agradecimento").innerHTML = "Obrigado por clicar";// injeta textos dentro do HTML
+    //console.log(document.getElementById("agradecimento"));
+    //alert("Obrigado por clicar!");
+}
+
+function redirecionar(){ //IMPORTANTE VOU USAR MUITO AINDA
+    window.open("https://www.bmw.com.br/pt/index.html") // função ativada ao clicar no texto "Obrigado por clicar"
+    //window.location.href ="https://www.bmw.com.br/pt/index.html" //igual o de cima, po´rem abre na mesma janela que o documento html
+}
+
+
+function trocar(){
+    document.getElementById("mouseMove").innerHTML = "Obrigado por passar o mouse";
+}
+
+function voltar(){
+    document.getElementById("mouseMove").innerHTML = "Passe o mouse aqui";
+}
+
+/*function soma(n1, n2){
+    return n1 + n2;
+}
+
+function validaIdade (idade){
+    var idade;
+    if (idade >= 18){
+        validar = true
+    }else{
+        validar = false
+    }
+    return validar;
+}
+
+var idade = prompt ("Qual sua idade?");
+console.log(validaIdade(idade));
+*/
+
+
+//alert(soma(5,10));
 
 //Trabalhando com data atual em JavaScript
 /*var d= new Date(); 
