@@ -25,10 +25,9 @@ body{
 }
 
 .parceiros{
-    background-image: linear-gradient(rgb(35, 144, 233), #757575bb);
+    background-image: linear-gradient(rgb(35, 144, 233), #fff);
 }
 
 .bg-footer{
-    background-image: linear-gradient( rgb(35, 144, 233), rgb(247, 162, 4));
-    color: white;
+    background-image: linear-gradient( #fff, rgb(35, 144, 233));
 }
