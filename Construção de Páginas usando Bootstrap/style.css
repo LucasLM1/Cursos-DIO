@@ -1,8 +1,13 @@
+*{
+    scroll-behavior: (0.0) smooth;
+}
+
 body{
     font: 20px Arial, sans-serif;
 }
 .navbar {
     background-color: #ffffff;
+    height: 80px;
 }
 
 .imgLogo{
@@ -30,4 +35,16 @@ body{
 
 .bg-footer{
     background-image: linear-gradient( #fff, rgb(35, 144, 233));
+}
+
+.footerFake{
+    text-decoration: none;
+    color: #000;
+    outline: none;
+}
+
+.footerFake:hover {
+    text-decoration: none;
+    color: #000;
+    outline: none;
 }
